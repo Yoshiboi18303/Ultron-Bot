@@ -1,5 +1,5 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
-const Profiles = require("../../schemas/profileSchema");
+const Profiles = require("../../schemas/userSchema");
 
 module.exports = {
   data: new SlashCommandBuilder()
