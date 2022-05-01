@@ -1,9 +1,9 @@
 <header>
   <% if(!req.isAuthenticated()) { %>
-    <button class="btn" onclick="location.href='/login'" id="login">Login</button>
+    <button class="btn" onclick="location.href='/login'"><img src="/static/img/login.png" class="login-image"><p style="left: 20px; bottom: 10px;">Login</p></button>
   <% } else { %>
       <img src="https://cdn.discordapp.com/avatars/<%= req.user.discord.id %>/<%= req.user.discord.avatar %>.png" class="user-avatar"><h3 class="user-username"><%= req.user.discord.username %></h3>
       <br>
-      <button class="logout" onclick="location.href='/logout'">Logout</button>
+      <button class="logout" onclick="location.href='/logout'"><img src="/static/img/logout.png"><p>Logout</p></button>
   <% } %>
 </header>
