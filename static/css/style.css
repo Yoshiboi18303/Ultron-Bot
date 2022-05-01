@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#login {
+  text-align: right;
+}
+
+header {
+  color: #1c2935;
+}
+
+div.header-content: {
+  text-align: right;
+}
+
+.user-avatar {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #1f3443;
+  border-radius: 50%;
+}
+
+.user-username {
+  font-family: "Radio Canada", sans-serif;
+  text-align: right;
+}
+
+.btn {
+  background-color: #2c2f33;
+  color: #34568c;
+  font-size: 15px;
+  transition-duration: 0.5s;
+  border: 2px solid #1f2e43;
+  border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #1f2e43;
+  color: white;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 250%;
+  font-family: "Josefin Sans", sans-serif;
+  color: #7289da;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fredoka One";
+  text-align: center;
+  font-size: 300%;
+  color: #00aeff;
+}
+
+.description {
+  color: rgb(180, 180, 255);
+  text-align: center;
+  font-family: "Fredoka One";
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #4caf50;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.75s ease-in-out;
+}
+
+.avatar:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+p,
+span {
+  color: #4caf25;
+}
+
+.description {
+  transition-duration: 0.65s;
+}
+
+.anchor-description {
+  color: rgb(180, 180, 255);
+  text-align: center;
+  font-family: "Fredoka One";
+  transition-duration: 0.65s
+}
+
+.description:hover {
+  color: darkblue;
+  cursor: not-allowed;
+}
+
+.anchor-description:hover {
+  color: darkblue;
+  cursor: pointer;
+}
+
+.logout {
+  background-color: #2c2f33;
+  color: #ff0000;
+  font-size: 15px;
+  transition-duration: 0.5s;
+  border: 2px solid darkred;
+  border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.logout:hover {
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+}
+
+.dc-icon {
+  height: 40px;
+  width: 40px;
+}
