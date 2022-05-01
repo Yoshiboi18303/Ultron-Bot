@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap");
 
 * {
   margin: 0;
@@ -12,16 +12,8 @@
   text-align: center;
 }
 
-#login {
-  text-align: right;
-}
-
 header {
   color: #1c2935;
-}
-
-div.header-content: {
-  text-align: right;
 }
 
 .user-avatar {
@@ -33,7 +25,6 @@ div.header-content: {
 
 .user-username {
   font-family: "Radio Canada", sans-serif;
-  text-align: right;
 }
 
 .btn {
@@ -107,7 +98,7 @@ span {
   color: rgb(180, 180, 255);
   text-align: center;
   font-family: "Fredoka One";
-  transition-duration: 0.65s
+  transition-duration: 0.65s;
 }
 
 .description:hover {

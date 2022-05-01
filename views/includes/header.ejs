@@ -1,5 +1,4 @@
 <header>
-  <div class="header-content">
   <% if(!req.isAuthenticated()) { %>
     <button class="btn" onclick="location.href='/login'" id="login">Login</button>
   <% } else { %>
@@ -7,5 +6,4 @@
       <br>
       <button class="logout" onclick="location.href='/logout'">Logout</button>
   <% } %>
-  </div>
 </header>

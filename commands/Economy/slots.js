@@ -32,17 +32,17 @@ module.exports = {
         var money = interaction.options.getString("bet");
         var win = false;
 
-        if(money == "all") money = data.coins
-        else money = parseInt(money)
+        if (money == "all") money = data.coins;
+        else money = parseInt(money);
 
-        if(isNaN(money)) {
+        if (isNaN(money)) {
           const invalidNumberEmbed = new MessageEmbed()
             .setColor(colors.red)
             .setTitle("Error")
-            .setDescription("That's not a number!")
+            .setDescription("That's not a number!");
           await interaction.reply({
-            embeds: [invalidNumberEmbed]
-          })
+            embeds: [invalidNumberEmbed],
+          });
         }
 
         const moneyMore = new MessageEmbed()
@@ -223,7 +223,7 @@ module.exports = {
                   slotItems[number[2]]
                 }**\n\nLmao. You just lost ${money} coin(s), you suck at this. **LOL**`
               )
-              .setColor(colors.red)
+              .setColor(colors.red);
             await interaction.editReply({
               embeds: [slotsLossEmbed],
             });

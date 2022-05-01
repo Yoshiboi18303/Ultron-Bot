@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require("express");
 const app = express.Router();
 const passport = require("passport");
 
@@ -7,7 +7,7 @@ app.get("/", (req, res, next) => {
   req.session.save();
 
   passport.authenticate("discord", { failureRedirect: "/" })(req, res, next);
-})
+});
 
 app.get(
   "/callback",

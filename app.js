@@ -1,14 +1,15 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
-const passport = require("passport")
+const passport = require("passport");
 const DiscordStrategy = require("passport-discord").Strategy;
 const Users = require("./schemas/userSchema");
 
-app.set("view engine", "ejs")
-app.set("views", path.join(__dirname, "views"))
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-app.use(require("express-session")({
+app.use(
+  require("express-session")({
     resave: false,
     saveUninitialized: false,
     secret: process.env.SECRET,
@@ -21,9 +22,9 @@ app.use(require("express-session")({
       },
     }),
   })
-)
-app.use(passport.initialize())
-app.use(passport.session())
+);
+app.use(passport.initialize());
+app.use(passport.session());
 
 passport.serializeUser((user, done) => {
   done(null, user);
@@ -62,13 +63,17 @@ passport.use(
 
 app.use("/static", express.static("static"));
 app.use("/login", require("./routes/login"));
-app.use("/logout", require("./routes/logout"))
+app.use("/logout", require("./routes/logout"));
 
 app.get(["/", "/home"], (req, res) => {
   res.status(200).render("index", {
-    req
-  })
-})
+    req,
+  });
+});
 
-app.listen(port)
-console.log("The website for Ultron is now listening on port ".green + `${port}`.blue + "!".green)
+app.listen(port);
+console.log(
+  "The website for Ultron is now listening on port ".green +
+    `${port}`.blue +
+    "!".green
+);
