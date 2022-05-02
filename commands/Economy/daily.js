@@ -1,5 +1,5 @@
 const { MessageEmbed, CommandInteraction } = require("discord.js");
-const Profiles = require("../../schemas/profileSchema");
+const Profiles = require("../../schemas/userSchema");
 
 const defaultReward = 500;
 const streakRewards = {
