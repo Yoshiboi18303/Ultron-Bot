@@ -39,6 +39,10 @@ const userSchema = Schema({
     type: Number,
     default: 0,
   },
+  message: {
+    type: String,
+    default: "",
+  },
 });
 
 module.exports = model("users", userSchema);
