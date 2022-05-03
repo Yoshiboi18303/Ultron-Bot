@@ -50,7 +50,7 @@ module.exports = {
           .setDescription("Welcome to the shop, have a look around!");
         for (var item of Items) {
           shop_embed.description += `${item_number == 1 ? "\n" : ""}\n${
-            item.image
+            item.emoji
           } ${item.item} **—** ${item.price}\n${item.desc}`;
           item_number++
         }
