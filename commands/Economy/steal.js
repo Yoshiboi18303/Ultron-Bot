@@ -1,4 +1,9 @@
-const { MessageEmbed, MessageActionRow, MessageButton, CommandInteraction } = require("discord.js");
+const {
+  MessageEmbed,
+  MessageActionRow,
+  MessageButton,
+  CommandInteraction,
+} = require("discord.js");
 const Profiles = require("../../schemas/userSchema");
 
 module.exports = {
@@ -18,8 +23,8 @@ module.exports = {
     message: "Your stealing is getting ridiculous.",
   },
   /**
-    * @param {CommandInteraction} interaction
-  */
+   * @param {CommandInteraction} interaction
+   */
   async execute(interaction) {
     /*
     if (interaction.guild.id != config.bot.testServerId)

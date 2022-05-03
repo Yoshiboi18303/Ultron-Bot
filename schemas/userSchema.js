@@ -45,8 +45,8 @@ const userSchema = Schema({
   },
   lastDaily: {
     type: Number,
-    default: 0
-  }
+    default: 0,
+  },
 });
 
 module.exports = model("users", userSchema);

@@ -142,11 +142,15 @@ span {
   text-align: left;
 }
 
-.feature-left > h2, .feature-right > h2, .feature-left > p, .feature-right > p {
+.feature-left > h2,
+.feature-right > h2,
+.feature-left > p,
+.feature-right > p {
   text-align: left;
 }
 
-.feature-left > p, .feature-right > p {
+.feature-left > p,
+.feature-right > p {
   font-family: "Orbitron", sans-serif;
 }
 

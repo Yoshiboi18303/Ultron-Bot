@@ -87,7 +87,7 @@ module.exports = {
         });
         const sent_err_embed = new MessageEmbed()
           .setColor(colors.red)
-          .setTitle(`Error Occurred! ${emojis.warn}`)
+          .setTitle(`Error Occurred!`)
           .setDescription(`\`${e}\``)
           .addFields([
             {
@@ -101,7 +101,7 @@ module.exports = {
           ])
           .setFooter(
             `This error was also sent to ${
-              client.guilds.cache.get("833671287381032970").name
+              client.guilds.cache.get("903394045445959711").name
             }!`
           );
         var options = {

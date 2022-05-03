@@ -74,8 +74,8 @@ app.get(["/", "/home"], (req, res) => {
 app.get(["/features", "/feats"], (req, res) => {
   res.status(200).render("features", {
     req,
-  })
-})
+  });
+});
 
 app.listen(port);
 console.log(
