@@ -47,6 +47,13 @@ const userSchema = Schema({
     type: Number,
     default: 0,
   },
+  inventory: {
+    type: Object,
+    default: {
+      computers: 0,
+      padlocks: 0,
+    }
+  }
 });
 
 module.exports = model("users", userSchema);
