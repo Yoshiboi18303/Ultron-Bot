@@ -137,3 +137,19 @@ span {
   width: 20px;
   height: 20px;
 }
+
+.feature-left {
+  text-align: left;
+}
+
+.feature-left > h2, .feature-right > h2, .feature-left > p, .feature-right > p {
+  text-align: left;
+}
+
+.feature-left > p, .feature-right > p {
+  font-family: "Orbitron", sans-serif;
+}
+
+.feature-right: {
+  text-align: right;
+}

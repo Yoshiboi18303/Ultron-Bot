@@ -23,5 +23,5 @@ mongo(process.env.MONGO_CS, {
   keepAliveInitialDelay: 300000,
 });
 
-require("./client");
+// require("./client");
 require("./app");

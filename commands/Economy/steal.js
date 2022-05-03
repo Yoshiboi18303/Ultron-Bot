@@ -46,7 +46,7 @@ module.exports = {
           .setColor(colors.red)
           .setTitle("Error")
           .setDescription(
-            `${emojis.nope} **-** You don't have any data!\nRun \`/start\` to get some!`
+            `You don't have any data!\nRun \`/start\` to get some!`
           );
         return await interaction.reply({
           embeds: [no_data_embed],
@@ -63,7 +63,7 @@ module.exports = {
             .setColor(colors.red)
             .setTitle("Error")
             .setDescription(
-              `${emojis.nope} **-** You're a passive user! You can't steal from anyone until you disable it!`
+              `You're a passive user! You can't steal from anyone until you disable it!`
             )
             .setTimestamp();
           return await interaction.editReply({
