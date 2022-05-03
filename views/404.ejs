@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <%- include("includes/head", { title: "Page Not Found" }) %>
+  </head>
+  <body style="background-color: #294054">
+    <%- include("includes/header", { req }) %>
+    <br>
+    <h1 style="font-size: 300%;">404</h1>
+    <h3 class="description">You seem lost weary traveller, let me guide you somewhere.</h3>
+    <br>
+    <div class="buttons">
+      <button class="btn" onclick="javascript:backHistory()">Go Back</button>
+      <button class="btn" onclick="location.href='/'">Go Home</button>
+      <br>
+      <button class="btn" onclick="location.href='https://discord.gg/496ceneFjA'"><img src="/static/img/discord.png" class="dc-icon">Support</button>
+    </div>
+  </body>
+  <script>
+    function backHistory() {
+      console.log("Returning user to their previous page...")
+      return window.history.back()
+    }
+  </script>
+</html>

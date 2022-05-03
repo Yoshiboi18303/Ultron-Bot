@@ -64,6 +64,7 @@ passport.use(
 app.use("/static", express.static("static"));
 app.use("/login", require("./routes/login"));
 app.use("/logout", require("./routes/logout"));
+// app.use(Handle404)
 
 app.get(["/", "/home"], (req, res) => {
   res.status(200).render("index", {
@@ -76,6 +77,12 @@ app.get(["/features", "/feats"], (req, res) => {
     req,
   });
 });
+
+function Handle404(req, res, next) {
+  res.status(404).render("404", {
+    req
+  })
+}
 
 app.listen(port);
 console.log(
