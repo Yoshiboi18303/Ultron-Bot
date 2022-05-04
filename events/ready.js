@@ -1,3 +1,5 @@
+const { generateDependencyReport } = require('@discordjs/voice');
+
 module.exports = {
   name: "ready",
   once: false,
@@ -9,6 +11,8 @@ module.exports = {
         console.error(`${`${status}`.red}`);
       }
     });
+
+    console.log(`${`${generateDependencyReport()}`.blue}`)
 
     client.stats.autopost();
 

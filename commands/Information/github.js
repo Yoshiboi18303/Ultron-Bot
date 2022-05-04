@@ -61,7 +61,7 @@ module.exports = {
         },
       });
       var data = await req.json();
-      console.log(data);
+      // console.log(data);
       if (data.message == "Not Found")
         return await interaction.editReply({
           content: "That's not a valid GitHub username!",

@@ -8,8 +8,8 @@ const client = new Client({
   shards: "auto",
 });
 const token = process.env.TOKEN;
-const { Client: C } = require("statcord.js");
-const statcord = new C({
+const { Client: Statcord } = require("statcord.js");
+const statcord = new Statcord({
   client,
   key: process.env.STATCORD_KEY,
   postCpuStatistics: true,

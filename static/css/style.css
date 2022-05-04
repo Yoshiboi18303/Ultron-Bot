@@ -154,6 +154,13 @@ span {
   font-family: "Orbitron", sans-serif;
 }
 
+.feature-left > img, .feature-right > img {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #4287da;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
 .feature-right: {
   text-align: right;
 }
