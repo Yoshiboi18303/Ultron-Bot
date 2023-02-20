@@ -1,7 +1,5 @@
-# Ultron
-A bot made for use in the **[FUBU](https://discord.gg/496ceneFjA)** army!
+# Archived?
 
----
+Due to some "issues", this bot has been deleted, and the repository has been archived, and will never be updated again.
 
-# Using the bot
-You can use the bot in [this server](https://discord.gg/496ceneFjA)!
+**Please email me or contact me on Discord for more details**
